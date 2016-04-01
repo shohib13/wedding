@@ -1,4 +1,4 @@
-﻿@charset 'utf-8';
+@charset 'utf-8';
 
 /* RESET */
 html, body, div, span, applet, object, iframe,
@@ -31,8 +31,8 @@ a:hover { text-decoration: underline;}
 ::selection { background: transparent; color: #ef3f37; text-shadow: none; }
 @font-face {
 	font-family: 'indiepimptbs';
-	src: url('fonts/indiepimptbs.eot');
-	src: local('indiepimptbs'), url('fonts/indiepimptbs.ttf') format('truetype');
+	src: url('http://www.theperfectjodi.com/css/fonts/indiepimptbs.eot');
+	src: local('indiepimptbs'), url('http://www.theperfectjodi.com/css/fonts/indiepimptbs.ttf') format('truetype');
 }
 a.labeel_win{ position: absolute; right: -1px; top: 140px; z-index:1560;}
 masterloader { background-color:black; height:100%; left:0; margin: 0; overflow: hidden; padding: 0;  position: absolute; top:0; width: 100%; z-index:600; }
