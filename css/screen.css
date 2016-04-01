@@ -1,0 +1,406 @@
+﻿@charset 'utf-8';
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q,spa s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; background-color:#F00;  }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+a b { /* ie6 ie7 */ !cursor: pointer; }
+
+/* BASE */
+
+html, body { font: 13px/20px  Georgia, serif; width:100%; height:100%; margin:0; color: #fff; background-image:url(../image/back-ground-img.jpg); background-position:bottom; background-repeat:repeat-x; background-color:#65c8e1;}
+a { text-decoration: none; color: #fff; }
+a:hover { text-decoration: underline;}
+/*::-moz-selection { background: #ef3f37; color: #fff; text-shadow: none; }
+::selection { background: #ef3f37; color: #fff; text-shadow: none; }*/
+::-moz-selection { background: transparent; color: #ef3f37; text-shadow: none; }
+::selection { background: transparent; color: #ef3f37; text-shadow: none; }
+@font-face {
+	font-family: 'indiepimptbs';
+	src: url('fonts/indiepimptbs.eot');
+	src: local('indiepimptbs'), url('fonts/indiepimptbs.ttf') format('truetype');
+}
+a.labeel_win{ position: absolute; right: -1px; top: 140px; z-index:1560;}
+masterloader { background-color:black; height:100%; left:0; margin: 0; overflow: hidden; padding: 0;  position: absolute; top:0; width: 100%; z-index:600; }
+#masterloader .batch { background:url('../image/logo_UN_03.png') top center no-repeat black; height:200px; left:50%; margin: -100px 0 0 -160px; overflow: hidden; padding: 0;  position: absolute; top:50%; width:320px; }
+#masterloader .batch .title { border-bottom:1px solid #666; border-top:1px solid #666; color: white; font-family:"Times New Roman", Times, serif; font-weight:normal; font-size: 1.4em; letter-spacing:.15em; margin:110px 0 0 0; padding: 8px 0; position: relative; text-align: center; text-transform: uppercase;   }
+#masterloader .batch .subtitle { color: white; font-weight: 300; font-size: 1.8em; margin:15px 0 0 0; position: relative; text-align: center; text-transform: uppercase; visibility:hidden;  }
+
+#spinner_box{background-color:#65c8e1; height:100%; left:0; margin: 0; background-image:url(../image/car-anim03.gif); background-position:bottom center; background-repeat:no-repeat; overflow: hidden; padding: 0;  position: absolute; top:0; width: 100%; z-index:11600;}
+#spinner_head{height:100%; left:0; background-image:url(../image/03.gif); background-position:500px 0px 250px 500px; background-repeat:no-repeat; overflow: hidden; padding: 0; position:static; top:0; width: 100%; z-index:1600;}
+#window { position: relative; width:100%; height:100%; overflow:hidden; } 
+#wrapper { position:absolute; z-index:10; left:50%; margin-left:-1000px; width:16000px; height:600px; bottom:0; }
+#mask { position:relative; width:100%; height:100%; overflow:hidden; }
+.page { position:absolute; top:0; width:2000px; z-index:50; height:600px; margin-left:0; background: url(../image/ground.png) repeat-x bottom;}
+.page>div { position: relative; width:960px; height:500px; margin:0 auto; margin-top:95px;}
+
+/* MENÜ */
+#menu { position:absolute; z-index:11; bottom:2000px; height:50px; width:100%; }
+#menuContent { position:relative; width:960px; height:65px; margin:0 auto; }
+#menuContent #subLogo { width:250px; height:150px; background: url(../image/logo-sub.png) no-repeat;}
+#menuContent #subLogo a { display:block; width:250px; height:150px; }
+#menuContent #subLogo a b {display:none;}
+#menuContent a { font-size:17px;}
+a.sm1, a.sm2, a.sm3, a.sm4, a.sm5, a.sm6, a.sm7, a.sm8 { position:absolute; display:block; background: url(../image/submenu.png); }
+
+a.sm1 { top:-25px; width:250px; height:150px; margin: 0 10px; background: url(../image/logo-sub.png) no-repeat; }
+a.sm4 { top:10px; left:290px; width:98px; height:30px; background-position: 0 0;}
+a.sm4:hover { background-position: -120px 0; }
+a.sm4:active { background-position: -120px 0; }
+a.sm5 { top:3px; left:430px; width:68px; height:35px; background-position: 0 -30px;}
+a.sm5:hover { background-position: -120px -30px; }
+/*a.sm4 { top:-5px; left:580px; width:48px; height:29px; background-position: 0 -157px; }
+a.sm4:hover { background-position: -160px -157px; }*/
+/*a.sm5 { top:30px; left:550px; width:108px; height:19px; background-position: 0 -59px;}
+a.sm5:hover { background-position: -160px -59px; }*/
+a.sm6 { top:0px; left:520px; width:122px; height:45px; background-position: 0 -57px;}
+a.sm6:hover { background-position: -120px -57px; }
+a.sm7 { top:-10px; left:670px; width:124px; height:49px; background-position: 0 -108px;}
+a.sm7:hover { background-position: -120px -108px; }
+/*a.sm8 { top:3px; right:30px; width:107px; height:28px; background-position: 0 -99px;}
+a.sm8:hover { background-position: -160px -129px; }*/
+
+
+/* REGISZTRÁCIÓ */
+#regisztracio { color:#08424f; line-height:18px; background: url(../image/page-regisztracio.png) no-repeat bottom; }
+#regisztracio a { color:#ef3f37; font-weight:bold;  }
+#regisztracio h3 { font-size: 28px; font-weight:lighter; margin-bottom:20px; padding:5px; text-align:center; }
+#regisztracio h3 span { float:right; font-size:18px; color:#61b0c2; }
+#regisztracio p { clear:both; margin: 5px 0;}
+#regform { position:absolute; top:70px; left:20px; width:900px; height:360px; }
+
+.regvissza, .regtovabb { position:absolute; bottom:20px; display:block; width:130px; height: 28px; background: url(../image/btn-regisztracio.png) no-repeat;}
+.regvissza { left:0; background-position:0 0; }
+.regvissza:hover { left:0; background-position:0 -28px; }
+.regtovabb { right:0; background-position:-130px 0; }
+.regtovabb:hover { right:0; background-position:-130px -28px; }
+
+#regpage1 ul { background: url(../image/separator-regisztracio.png) repeat-y left; height:260px; }
+#regpage1 ul li { margin:8px 12px; line-height:12px; }
+#regpage1 ul li b { font-size:11px; padding-left:22px; }
+#regpage1 ul li a { margin:0 10px;}
+#regpage1 p { font-weight:bold; font-size:16px;}
+.regpage1float { width:250px; float:left; }
+
+#regpage2 { font-size:18px; }
+#regpage2 li { float:left; margin: 100px 20px; }
+#regpage2 i { margin-left:30px; display:block; width:130px; height:30px; background: url(../image/szallas-csillagok.png) no-repeat  0 -30px; }
+#regpage2 i>span { display:block; height:30px; background: url(../image/szallas-csillagok.png) no-repeat;}
+li.kat1 i>span {width:51px; } 
+li.kat2 i>span {width:64px; } 
+li.kat3 i>span {width:77px; } 
+li.kat4 i>span {width:103px; } 
+
+#regpage3 dl { width:400px; margin:5px 250px;}
+#regpage3 dt { clear:both; float:left; margin:3px 0; }
+#regpage3 dd {float:right; margin:2px 0; }
+.nemtartalmazza { padding-top:10px; font-weight:bold; }
+.szobafoglalas { text-align:center; font-size:16px; font-weight:bold; }
+
+#regpage4 dl { width:400px; margin:10px 250px;}
+#regpage4 dt { clear:both; float:left; margin:3px 0; }
+#regpage4 dd {float:right; margin:2px 0; }
+
+#regpage5 dl { width:400px; margin:10px 250px;}
+#regpage5 dt { clear:both; float:left; margin:3px 0; }
+#regpage5 dd {float:right; margin:2px 0; }
+
+#regpage6 dl { width:600px; margin:10px 150px;}
+#regpage6 dt { clear:both; float:left; margin:3px 0; }
+#regpage6 dd {float:right; margin:2px 0; }
+
+/*input[type="text"] { width:160px; height:30px; text-align:center; font: 13px/20px  Georgia, serif; color:#08424f; border:0; background: url(../image/input-regisztracio.png) no-repeat;}*/
+ul.szallashely li { float:left; margin: 0 20px 10px 0; text-transform:uppercase; }
+
+
+
+
+/* PROGRAMOK */
+#programok { background: url(../image/page-programok.png) no-repeat bottom; color:#c7bc01; }
+#programok a { color:#e53c2f; }
+#elsoNap, #masodikNap, #harmadikNap, #negyedikNap { position:absolute; font-weight:bold; font-size:11px; line-height:15px; color:#e53c2f; }
+#programok span { margin:0 5px; color:#206887; font-weight:normal; }
+#elsoNap { top:110px; left:295px; }
+#masodikNap { top:205px; left:70px; }
+#harmadikNap { top:295px; left:210px; text-align:right;}
+#negyedikNap { top:400px; left:45px; }
+#fakultativ { position:absolute; top:155px; right:180px; font-size:13px; line-height:24px; }
+#fakultativ li { padding-left: 26px; background: url(../image/bullet-fakultativ.png) no-repeat 0 2px; }
+.fakultativLeiras { position:absolute; display:none; top:0; right:0; z-index:999; width:960px; height:530px; color:#176176; background: url(../image/panel-1.png) no-repeat;   }
+.fakultativLeiras h2 { font-size:18px; text-transform:uppercase; margin-bottom:20px; }
+.fakultativContent { position:absolute; top:65px; left:40px; }
+.fakultativContent { width: 800px; height: 420px; overflow: hidden; float: left; }
+.fakultativFrame { float: left; position: relative; top: 0; }
+a.fakultativScrollUp, a.fakultativScrollDn  { display:block; position:absolute; z-index:90;  width:44px; height:40px; background: url(../image/scroll-forum.png) no-repeat; }
+a.fakultativScrollUp { top:50px; right:10px; background-position: 0 0; }
+a.fakultativScrollUp:hover { background-position: -43px 0; }
+a.fakultativScrollDn { top:100px; right:10px; background-position: 0 -40px; }
+a.fakultativScrollDn:hover { background-position: -43px -40px; }
+#valtoztatasJoga { position:absolute; bottom:20px; right:0px; font-size:10px; }
+
+/* ÁRAK */
+#arak { background: url(../image/page-arak.png) no-repeat bottom; color:#c7bc01; }
+#priceContent { position:absolute; top:95px; left:290px; width:640px; height:270px; overflow:hidden;}
+#pricePage1, #pricePage2, #pricePage3  { float:left; width:690px; height:270px; }
+<!--#priceContent h2 {width:690px; height:70px; background-image:url(../image/vijay-rosleen.png); background-repeat:no-repeat; background-position:168px 0px; margin-top:5px;}-->
+#priceContent h2 {width:690px; height:190px; background-image:url(../image/story-content.png); background-repeat:no-repeat; background-position:14px 0px; margin-top:75px; }
+#priceContent h3 {width:690px; height:190px; background-image:url(../image/story-content.png); background-repeat:no-repeat; background-position:14px 0px; margin-top:75px;}
+#pricePrew, #priceNext { position:absolute; z-index:999; top:90px; display:block; height:38px; background: url(../image/btn-arak.png) no-repeat; }
+#pricePrew { right:70px; width:50px; background-position:0 0; }
+#pricePrew:hover { background-position: 0 -38px; }
+#priceNext { right:30px; width:40px; background-position: -50px 0; }
+#priceNext:hover { background-position: -50px -38px; }
+#arak table { margin-top:10px; }
+#arak tr { font-size:12px; font-weight:bold; color:#ee4f1f;}
+#arak td { padding:0 10px; }
+#arak td:first-child { font-weight:normal; color:#206887; }
+#arak th { font-weight:normal; color:#206887; font-size:12px; padding:0 10px; }
+#arak th:first-child  { font-weight:bold; font-size:11px; }
+#priceinformacio { position: absolute; background-image:url(../image/01.gif); background-repeat:no-repeat; width:170px; height:150px; background-position:top left; bottom: -12px; margin-left: 718px; }
+#priceInclList{ position:absolute; background-image:url(../image/our-story.gif); background-repeat:no-repeat; background-position:right top; width:202px; height:170px; bottom:-14px; margin-left:740px;}
+#priceInclListRight {position:absolute; background-image:url(../image/vijay-rosleen.png); background-repeat:no-repeat; background-position:78px 0px; width:690px; height:70px; bottom:330px;}
+#priceInclList li, #priceInclListRight li { list-style-type:square; }
+#priceInclList { width:300px; left:50px; }
+#priceInclListRight { width:580px; right:0; }
+.priceInclListHead { list-style: none; font-weight:bold}
+
+#prices { width: 2070px; position: absolute; }
+
+/* ZENEKAROK */
+#zenekarok { background: url(../image/page-zenekarok.png) no-repeat bottom; }
+#zenekaroktabla { margin: 134px 0 0 594px; }
+/*
+a.z1, a.z2, a.z3, a.z4, a.z5, a.z6, a.z7, a.z8 { position: absolute; display:block; width:20px; height:20px; background: url(../image/btn-zenekarok.png) no-repeat; } 
+a.z1 { top:31px; right:32px; width:222px; height:106px; background-position: 500px 0; }
+a.z1:hover { background-position: 0 0; }
+a.z2 { top:129px; right:63px; width:299px; height:96px; background-position: 500px -106px; }
+a.z2:hover { background-position: 0 -106px; }
+a.z3 { top:220px; right:35px; width:333px; height:49px; background-position: 500px -202px; }
+a.z3:hover { background-position: 0 -202px; }
+a.z4 { top:278px; right:210px; width:161px; height:61px; background-position: 500px -251px; }
+a.z4:hover { background-position: 0 -251px; }
+a.z5 { top:272px; right:45px; width:160px; height:56px; background-position: 500px -312px; }
+a.z5:hover { background-position: 0 -312px; }
+a.z6 { top:353px; right:219px; width:131px; height:35px; background-position: 500px -368px; }
+a.z6:hover { background-position: 0 -368px; }
+a.z7 { top:340px; right:58px; width:131px; height:62px; background-position: 500px -403px; }
+a.z7:hover { background-position: 0 -403px; }
+a.z8 { top:403px; right:55px; width:327px; height:91px; background-position: 500px -465px; }
+a.z8:hover { background-position: 0 -465px; }
+*/
+.zenkarLeiras { position:absolute; display:none; top:50px; right:0; z-index:999; width:960px; height:530px; font-size:11px; line-height:14px; color:#176176; background: url(../image/panel-1.png) no-repeat;   }
+.zenkarLeiras  ul { position:absolute; z-index:1; margin-top:100px;}
+.zMedia { float:left; width:180px; height:300px; margin:30px 0 0 20px; }
+.zKikok { float:left; width:260px; height:300px; margin:20px 0 0 20px; }
+.zMicsi { float:left; width:220px; height:300px; margin:30px 0 0 20px; color:#ef3f37; }
+.zDiszko { float:left; width:220px; height:300px; margin:30px 0 0 20px; color:#0f8179; }
+.panelBack { position:absolute; top:5px; right:10px; display:block; width:250px; height:40px; }
+.zenkarLeiras ul li b { color:#1aa79c;}
+.zenkarLeiras ul li br { margin:2px; }
+
+.z1Panel span, .z2Panel span , .z3Panel span , .z4Panel span , .z5Panel span , .z6Panel span , .z7Panel span , .z8Panel span { position:absolute; z-index:0; bottom:55px; left:50px; background: url(../image/btn-zenekarok.png) no-repeat;}
+.z1Panel span { width:222px; height:106px; background-position: 0 0; }
+.z2Panel span { width:299px; height:96px; background-position: 0 -106px; }
+.z3Panel span { width:333px; height:49px; background-position: 0 -202px; }
+.z4Panel span { width:161px; height:61px; background-position: 0 -251px; }
+.z5Panel span { width:160px; height:56px; background-position: 0 -312px; }
+.z6Panel span { width:131px; height:35px; background-position: 0 -368px; }
+.z7Panel span { width:131px; height:62px; background-position: 0 -403px; }
+.z8Panel span { width:327px; height:91px; background-position: 0 -465px; }
+.zTitle { position:absolute; top:30px; right:10px; width:930px; height:85px; background: url(../image/title-zenekarok.png) no-repeat; }
+
+.zKepek { position:absolute; top:268px; left:830px; z-index:100; display:block; width:130px; height:60px; background: url(../image/event-photo.png) no-repeat;  }
+.zKepek:hover { background-position: 0px 0;}
+.zVideok { position:absolute; top:263px; left:32px; z-index:100; display:block; width:130px; height:60px; background: url(../image/event-video.png) no-repeat;  }
+.zVideok:hover { background-position: 0px 0; }
+
+/* KEZDÕLAP */
+#mainLogo { position:absolute; width:600px; height:310px; left:700px; bottom:300px; background: url(../image/logo-main.png) no-repeat; }
+#kezdolap { background: url(../image/page-main.png) no-repeat bottom; }
+a.m1, a.m2, a.m3, a.m4, a.m5, a.m6, a.m7  { position: absolute; background:none;}
+a.m1 { bottom:220px; left:320px; width:350px; height:70px; }
+a.m2 {
+	bottom:116px;
+	left:8px;
+	width:180px;
+	height:30px;
+}
+a.m3 {
+	bottom:111px;
+	left:28px;
+	width:162px;
+	height:40px;
+}
+a.m4 {
+	bottom:151px;
+	left:135px;
+	width:170px;
+	height:40px;
+}
+a.m5 { bottom:215px; right:0; width:220px; height:50px; }
+a.m6 {
+	bottom:147px;
+	right:24px;
+	width:180px;
+	height:40px;
+}
+a.m7 { bottom:70px; right:10px; width:180px; height:70px; }
+
+/* SZÁLLÁSOK */
+#szallaslehetosegek { background: url(../image/page-szallas.png) no-repeat bottom; text-shadow:1px 1px #85562f;}
+
+
+/* fõkategória */
+.bioscope {float:left; width:250px; height:170px; background-image:url(../image/bioscope.png); background-repeat:no-repeat; background-position:20px 50px;}
+.bioscopetext {float:left; width:400px; height:110px; font-family:'indiepimptbs'; color:#22647f; text-shadow:none; font-size:14pt; line-height:26px; margin-top:60px; margin-left:0px;}
+.bioscopeinner {font-family:'indiepimptbs'; color:#22647f; text-shadow:none; line-height:26px; font-size:14pt; font-weight:bold;}
+.bioscopeinner1 {font-family:'indiepimptbs'; color:#22647f; text-shadow:none; font-size:11pt; line-height:20px;}
+.gettingtext {font-family:'indiepimptbs'; color:#FFF; text-shadow:none; font-size:19pt; padding-top:12px; margin-top:10px; line-height:20px;}
+.arrowanimation {width:670px; position:relative; top:190px; left:135px; background-image:url(../image/arrow-animation.gif); background-repeat:no-repeat; height:55px;}
+.biophoto {width:670px; position:absolute; z-index:90; height:200px;}
+.biophoto1 {float:left; width:310px; margin-left:25px; height:190px; background-image:url(../image/bio-photo01.png); background-repeat:no-repeat;}
+.biophoto2 {float:left; width:315px; margin-left:20px; height:190px; background-image:url(../image/bio-photo02.png); background-repeat:no-repeat;}
+#szallasKategoria { position:absolute; bottom:80px; right:0px; width:670px; height:420px; }
+#szallasKategoria li { float:left; margin: 0px 0; }
+#szallasKategoria li a { position:relative; display:block; width:330px; height:190px; background: url(../image/bio-photo.png) no-repeat;}
+/*#szallasKategoria a>span { position:absolute; right:20px; bottom:0; display:block; width:130px; height:30px; background: url(../image/szallas-csillagok.png) no-repeat  0 -30px; }*/
+<!--#szallasKategoria a>span>span { display:block; height:30px; background: url(../image/szallas-csillagok.png) no-repeat;}-->
+#szallasKategoria li.kat1 a {background-position:0 0px; } 
+#szallasKategoria li.kat1 a:hover {background-position:0px -195px; } 
+#szallasKategoria li.kat2 a {background-position:-333px 0px; } 
+#szallasKategoria li.kat2 a:hover {background-position:-333px -195px; } 
+#szallasKategoria li.kat3 a {background-position:0 -200px; } 
+#szallasKategoria li.kat3 a:hover {background-position:-260px -200px; } 
+#szallasKategoria li.kat4 a {background-position:0 -300px; } 
+#szallasKategoria li.kat4 a:hover {background-position:-260px -300px; } 
+li.kat1 a>span>span {width:51px; background-color:#0FF; } 
+li.kat2 a>span>span {width:64px; } 
+li.kat3 a>span>span {width:77px; } 
+li.kat4 a>span>span {width:103px; } 
+
+/* szallastlista*/
+#szallasLista {  display:none; position:absolute; bottom:60px; right:10px; width:630px; height:430px; color:#fff; }
+.szallasMenu { position:absolute;  right:-9px; top:-20px; width:705px; height:70px; background: url(../image/szallas-kategoriahatter.png) no-repeat; background-position:0px 0px; }
+.szallasMenu li { float:left; margin:12px 8px; }
+#szallasKatBack a, #szallasListBack a{  display:block; top:0px; width:750px; height:35px; background: url(../image/szallas-visszabtn.png) no-repeat; background-position:582px 0px}
+#szallasKatBack a:hover, #szallasListBack a:hover { background-position: 582px -36px; }
+li.szallasKatBtn a>span { display:block; width:130px; height:30px; background: url(../image/szallas-csillagok.png) no-repeat  0 -30px; }
+li.szallasKatBtn a>span>span { display:block; height:30px; background: url(../image/szallas-csillagok.png) no-repeat;}
+#lista p{ position:absolute; top:58px; font-size: 16px; font-weight: bold;}
+#lista ul{ position:absolute; top:80px;}
+#lista li { float:left; width:300px; height:100px; margin:5px 5px;}
+#lista li span { text-transform: uppercase; }
+#lista li strong { clear:both;}
+#lista li a { font-weight:bold; color:#f59323; }
+#kep li img, #lista li img { float:left; width:120px; height:80px; padding:20px 10px; margin:30px 10px 0 0; background: url(../image/szallas-img-bg.png) no-repeat;}
+
+
+/* szállás leírás */
+#szallas { display:none; position:absolute; bottom:60px; right:10px; width:630px; height:430px; color:#fff; }
+#szallasFrame { position:absolute; top:55px; right:0px; width:630px; height:365px; overflow:hidden; } 
+#szallasLeiras { position:absolute; top:0px; right:0px; width:630px;  }
+#szoveg { float:right; width:480px; margin:15px 0; }
+#kep { float:left; width:650px; margin:15px 0; }
+#szoveg h2 { font-size:20px; text-transform:uppercase; margin-bottom:20px; }
+#szoveg ul { margin-bottom:20px; width:400px; }
+#szoveg ul li { margin-bottom:2px; }
+#szoveg ul li span { float:right; font-weight:bold;}
+#szoveg p { margin-bottom:10px; }
+a.szallasScrollUp, a.szallasScrollDn  { display:block; position:absolute; z-index:90;  width:30px; height:60px; background: url(../image/scroll-szallas.png) no-repeat; }
+a.szallasScrollUp { top:50px; right:0; background-position: 0 0; }
+a.szallasScrollUp:hover { background-position: -32px 0; }
+a.szallasScrollDn { top:125px; right:0; background-position: 0 -60px; }
+a.szallasScrollDn:hover { background-position: -32px -60px; }
+
+
+/* FÓRUM */
+#forum { background: url(../image/page-forum.png) no-repeat bottom; color:#c7bc01; }
+
+#forumLogin { position:absolute; z-index:100; width:770px; height:475px; right:-30px; top:-25px; background: url(../image/jegtomb.png) no-repeat; }
+#forumLogin p { position:absolute; top:150px; left:180px; }
+#forumLogin p  a { color:#e53c2f; }
+#loginInputs { position:absolute; top:180px; left:220px; width:320px; height:96px; background: url(../image/forum-input.png) no-repeat; }
+/*#loginInputs input {float:left; width:320px; height:30px; margin:8px 0; border:0; background:none; text-align:center; font: 18px/20px  Georgia, serif; color:#fff; }*/
+.loginToForum  { top:100px; left:120px;  background: url(../image/btn-mehet.png) no-repeat;  }
+.sendComment { bottom:40px; right:200px; background: url(../image/btn-mehet.png) no-repeat;  }
+.backToComments { bottom:40px; right:400px; background: url(../image/btn-vissza.png) no-repeat;  }
+.loginToForum, .sendComment, .backToComments { position:absolute; display:block; width:154px; height:53px; }
+.loginToForum:hover, .sendComment:hover, .backToComments:hover { background-position: 0 -53px; }
+
+#forumComment { display:none; position:absolute; z-index:100; width:770px; height:475px; right:-30px; top:-25px; background: url(../image/jegtomb.png) no-repeat; }
+.commentField { position:absolute; top:50px; left:80px; width:640px; height:270px; border:0; padding:30px; font: 18px/20px  Georgia, serif; color:#fff; background: url(../image/forum-comment.png) no-repeat; }
+#forumFrameCont { position:absolute; bottom:90px; right:20px; width:680px; height:360px; overflow:hidden; }
+#forumFrameCont .map { width:260px; height:190px; z-index:999; position:absolute; left:300px; top:100px; background-image:url(../image/map.gif); }
+#forumFrame { position:relative; top:31px; left:12px;}
+#forumFrame li  { margin-bottom:10px; padding:0 0 1px 0; background: url(../image/separator-forum.png) repeat-x bottom; }
+#forumFrame li span { color:#ef3f37; }
+#forumFrame li p { font-size:14px; line-height:16px; }
+
+a.forumScrollUp, a.forumScrollDn  { display:block; position:absolute; z-index:90;  width:44px; height:40px; background: url(../image/scroll-forum.png) no-repeat; }
+a.forumScrollUp { top:0; right:0; background-position: 0 0; }
+a.forumScrollUp:hover { background-position: -43px 0; }
+a.forumScrollDn { top:50px; right:0; background-position: 0 -40px; }
+a.forumScrollDn:hover { background-position: -43px -40px; }
+
+a.forumCommentBtn { position:absolute; bottom:55px; right:10px; display:block; width:242px; height:64px; background: url(../image/btn-hozzaszolok.png) no-repeat; }
+a.forumCommentBtn:hover { background-position: 0 -64px;}
+
+<!--a.emailerBtn {position:absolute; bottom:145px; right:10px; display:block; width:70px; height:230px; z-index:1999; background-position:0px 18px; background-image:url(../image/contac-me.jpg); background-repeat:no-repeat;}-->
+<!--a.emailerBtn:hover { background-position:0px 18px; background-image:url(../image/contac-me-hover.jpg);}-->
+
+
+/* TUDNIVALOK */
+#tudnivalok  { background: url(../image/page-tudnivalok.png) no-repeat bottom; color:#c7bc01; }
+
+
+/* parallax */
+#foreground { position:absolute; z-index:999; bottom:0; height:500px; width:14000px; left:50%; margin-left:-6000px; background: url(../image/foreground.png) repeat-x;  }
+#sky { position:absolute; z-index:1; bottom:120px; height:410px; width:4000px; left:50%; margin-left:-1000px; background: url(../image/sky.jpg) repeat-x; background-position:center;  }
+#mountain { position:absolute; z-index:2; bottom:120px; height:400px; width:5000px; left:50%; margin-left:-1000px; background: url(../image/mountain.png) repeat-x bottom;  }
+#woods { position:absolute; z-index:3; bottom:120px; height:100px; width:8000px; left:50%; margin-left:-4000px; background: url(../image/woods.png) repeat-x bottom;  }
+
+/* parallax startPoz*/
+#sky  { left:-60px; }
+#mountain { left:-150px; } 
+#woods { left:-600px; } 
+
+
+/* common */
+a b {display:none;}
+
+
+
+
+/* tudnivalok */
+a.tudnivalokScrollUp, a.tudnivalokScrollDn  { display:block; position:absolute; z-index:90;  width:44px; height:40px; background: url(../image/scroll-forum.png) no-repeat; }
+a.tudnivalokScrollUp { top:0; right:0; background-position: 0 0; }
+a.tudnivalokScrollUp:hover { background-position: -43px 0; }
+a.tudnivalokScrollDn { top:50px; right:0; background-position: 0 -40px; }
+a.tudnivalokScrollDn:hover { background-position: -43px -40px; }
+
+
+#tudnivalokContent { margin-top: 170px; width: 670px; height: 415px; overflow: hidden; }
+#tudnivalokFrame { 
+    width: 630px;
+    float: left;
+    position: relative;
+    top: 0;
+}
+.zenekarkepek, .zenekarvideok { display: none; }
+
+#siberletek { display: none; }
+#tudnivalok a { color: #EF3F37; }

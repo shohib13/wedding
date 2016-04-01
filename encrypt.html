@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta property="og:image" content="/image/share.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.OibEuis.com/" />
+<meta name="Author" content="Shohib" />
+<meta name="description" content="Website ini hanya untuk media share undangan"/>
+<meta name="robots" content="follow,index" />
+<meta name="robots" content="all" />
+<meta name="Language" content="English"/>
+<meta name="Designer" content="Shohib"/>
+<meta name="country" content="Indonesia"/>
+<title>Wedding Invitation Shohib & Euis</title>
+<link rel="stylesheet" media="screen, projection" type="text/css" href="css/screen.css" />
+<link rel="stylesheet" media="all" href="css/font-face.css" type="text/css" />
+<link rel="stylesheet" media="screen" type="text/css" href="css/uniform.css" />
+<link media="screen" rel="stylesheet" href="css/colorbox.css" />
+<link rel="stylesheet" type="text/css" href="css/scrolling.css" media="screen" />
+<link rel="shortcut icon" href="image/icon.ico" />
+<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.js"></script>
+<script type="text/javascript" src="js/loader.js"></script>
+<script type="text/javascript" src="js-form/img-mouseover.js"></script>
+
+<script type="text/javascript">                                         
+   // we will add our javascript code here           
+   
+  $(document).ready(function(){
+    $("#ajax-contact-form").submit(function(){
+
+      var str = $(this).serialize();
+      $.ajax({
+            type: "POST",
+            url: "contact.php",
+            data: str,
+            success: function(msg){
+            $("#note").ajaxComplete(function(event, request, settings){
+            if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+            {
+              result = '<div class="notification_ok">Sampai jumpa lagi kawan :)</div>';
+              $("#fields").hide();
+            }else{
+              result = msg;
+            }
+            $(this).html(result);
+          });
+        }
+      });
+      return false;
+    });
+  });
+
+</script>
+
+
+</head>
+<!-- Disable saat ngoding shohib -->
+
+<script language=JavaScript>shohib='%3Cscript%20language%3DJavaScript%3E%3C!--%0A%0Avar%20message%3D%22sohibeuis.com%20%2C%20dilarang%20Klik%20Kanan%20%26%20Intip%20Source%20Code!%22%3B%0A%0Afunction%20clickIE()%20%20%7Bif%20(document.all)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%0Afunction%20clickNS(e)%20%7Bif%20%0A(document.layers%7C%7C(document.getElementById%26%26!document.all))%20%7B%0Aif%20(e.which%3D%3D2%7C%7Ce.which%3D%3D3)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%7D%0Aif%20(document.layers)%20%0A%7Bdocument.captureEvents(Event.MOUSEDOWN)%3Bdocument.onmousedown%3DclickNS%3B%7D%0Aelse%7Bdocument.onmouseup%3DclickNS%3Bdocument.oncontextmenu%3DclickIE%3B%7D%0A%0Adocument.oncontextmenu%3Dnew%20Function(%22return%20false%22)%0A%0A%2F%2F%20--%3E%3C%2Fscript%3E';d=unescape(shohib);document.write(d);</script>
+
+<body onLoad="loadBody()">
+<div id="preloader">
+  <div id="spinner_box"></div>
+</div>
+
+<div id="main">
+      <div id="twitterFeed">
+            <div style="padding-top:75px; padding-left:84px;" class="fb-like" data-href="https://www.facebook.com/phele.sudden" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+            </div>
+            </div>
+
+ <div id="photos" class="slideOut">
+      <div id="toggle" >
+
+        <a href="#" id="open" class="blockLink" >Open</a>
+        <a href="#" id="close" class="blockLink" style="display: none;">Close</a>
+      </div>
+            
+<div class="scrollable vertical">
+<div id="note" style="height:25px; padding-top:3px; text-transform:capitalize; line-height:95%">Jika ingin menggunakan website seperti ini untuk pernikahan Anda? Hubungi saya!</div>
+<form id="ajax-contact-form" name="freecontactform" method="post" action="javascript:alert('success!');" onSubmit="return validate.check(this)">
+    <table width="200px" border="0" cellspacing="0" cellpadding="0" class="table-font">
+    <tr>
+    <td align="left" valign="top">Nama Depan<span class="required_star"> * </span></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><input type="text" name="Full_Name" id="Full_Name" maxlength="80" class="input_tab"></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Alamat Email<span class="required_star"> * </span></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><input type="text" name="Email_Address" id="Email_Address" maxlength="100"  class="input_tab"></td>
+  </tr>
+  <tr>
+  <tr>
+    <td align="left" valign="top" style="display:none;"> <input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100"  class="input_tab"></td>
+  </tr>
+    <td align="left" valign="top">Pesan Anda<span class="required_star"> * </span></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><textarea  name="Your_Message" id="Your_Message" maxlength="180" class="textarea_tab"></textarea></td>
+  </tr>
+   
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="42%" align="left" valign="top"><img src="images/click-here.jpg" width="78" height="38" alt="click here" /></td>
+    <td width="58%" align="left" valign="top"><input type="submit" class="form-button" value="Submit Form "></td>
+  </tr>
+</table>
+</td>
+  </tr>
+  
+</table>
+</form>
+<div class="spins">
+  <a href="https://www.facebook.com/phele.Sudden" target="_blank"><img class="mouseover" src="images/fb-lite.png" alt="" oversrc="images/fb-hover.png" height="52" width="52"></a>
+  <a href="https://twitter.com/shohib_hexa" target="_blank"><img class="tt-wrapper mouseover" src="images/twitter_nm.png" alt="" oversrc="images/twitter_hv.png" height="52" width="52"></a>
+  <a href="https://www.linkedin.com/in/mohamadshohaib" target="_blank"><img class="mouseover" src="images/linkedin-lite.png" alt="" oversrc="images/linkin-hover.png" height="52" width="52"></a>
+  </div>
+
+</div>
+</div>
+
+<div id="videos" class="slideOut" style="display:none;">
+      <div id="toggleTwo">
+        <a href="#" id="openTwo" class="blockLink">Open</a>
+        <a href="#" id="closeTwo" class="blockLink" style="display: none;">Close</a>
+      </div>
+    
+      <div class="scrollable verticalTwo">DEMO</div>
+    </div>
+ 
+ 
+<div id="window">
+  <div id="wrapper">
+    <div id="mainLogo"><a><b>16 APRIL 2016</b></a></div>
+    <div id="mask">
+      <div id="regisztracio" class="page" style="left: -4000px;">
+      </div>
+      <div id="programok" class="page" style="left: -2000px;">
+      </div>
+      <div id="arak" class="page" style="left: 0px;">
+      <div>
+    <a href="#" id="pricePrew"><b>back</b></a>
+    <a href="#" id="priceNext"><b>prev</b></a>
+    <div id="priceContent">
+      <div id="prices">
+        <div id="pricePage1">                   
+            <!--<h2>sdgsgds</h2>-->
+            <h3><div style="font-family:'indiepimptbs'; color:#22647f; letter-spacing:0.5px; text-shadow:none; font-size:14pt; font-weight:lighter; padding-top:25px; padding-left:15px;">Kedewasaan membawa kita harus memilih bahwa cinta itu bukan sekedar<br>dari mata turun ke hati, bukan sekedar pandangan pertama<br>langsung jatuh hati dan bukan hanya cinta yang tanpa alasan.</div>
+            <div style="font-family:'indiepimptbs'; color:#22647f; letter-spacing:0.5px; text-shadow:none; font-size:14pt; font-weight:lighter; padding-top:10px; padding-left:15px;">Kita terlahir dari proses, <br>begitu juga kehidupan cinta yang nyatanya memang harus kita bangun dengan penuh ketulusan hati.</div></h3>
+            </div>
+            <div id="pricePage2">                   
+            <!--<h2>sdgsgds</h2>-->
+            <h2>
+              <div style="font-family:'indiepimptbs'; color:#22647f; letter-spacing:0.5px; text-shadow:none; font-size:14pt; font-weight:lighter; padding-top:25px; padding-left:15px;">Doakan kami melangkah ke Pernikahan.<br> 
+              and an exciting one, and we plan to be<br>
+              together forever.</div>
+              <div style="font-family:'indiepimptbs'; color:#22647f; letter-spacing:0.5px; text-shadow:none; font-size:14pt; font-weight:lighter; padding-top:10px; padding-left:15px;">Sebuah episode baru bagi kehidupan kami,<br> 
+              alur cerita yang Allah SWT rangkai dengan penuh warna suka dan duka,<br>dimana banyak cobaan yang akan memperkuat keutuhan pernikahan.</div></h2>
+            </div>
+     </div>
+    </div>
+    <div id="priceinformacio">
+       <p></p> 
+  </div>
+  <div id="priceInclList"></div>
+  <div id="priceInclListRight"></div>
+   </div>
+        <!--FINAL Love Story-->
+      </div>
+      <div id="zenekarok" class="page" style="left: 0px;">
+<div>
+  <img id="zenekaroktabla" src="image/zenekarok.gif" usemap="#zenekarokmap">
+  <div style="position:absolute; width:200px; left:459px; top:319px;"><img src="image/events.gif" width="200" height="191" alt="Resepsi"></div>
+  <map id="zenekarokmap" name="zenekarokmap">
+    <area shape="poly" class="z1 zenekarBtn" alt="shohib" title="shohib" coords="15,-2,13,137,279,142,288,5" href="#" target="">
+    <area shape="poly" class="z2 zenekarBtn" alt="Shohib & Euis" title="Shohib & Euis" coords="27,220,111,236,147,232,195,219,213,231,293,213,297,319,28,324" href="#" target="">
+    </map>
+</div></div>
+      <div id="kezdolap" class="page">
+        <div> <a href="#" class="m3 pl" rel="3"><b>Love Story</b></a> <a href="#" class="m4 pl" rel="4"><b>Resepsi</b></a> <a href="#" class="m5 pl" rel="6"><b>Bio Scope</b></a> <a href="#" class="m6 pl" rel="7"><b>Denah</b></a> </div>
+      </div>
+        <div id="szallaslehetosegek" class="page" style="left: 0px;">
+        <div>
+            <div id="szallasKategoria">
+            <div style="width:670px; position:relative; height:180px;"><div class="bioscope"></div><div class="bioscopetext">They say pictures speak a thousand words.<br> Here are few, which try to narrate<br> our story.</div></div>
+          <!--<div style="width:670px; position:relative; height:170px;"><div class="biophoto1 katBtn1"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar.html','szallasLeiras');" ><b>VIJAY SHAKYA</b><span><span></span></span></a></div>
+            <div class="biophoto2"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar1.html','szallasLeiras');" ><b>Valami jobbat akarok</b><span><span></span></span></a></div></div>-->
+                <ul>
+                    <li class="kat1 szallasKatBtn katBtn1"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar.html','szallasLeiras');"><b>Shohib</b></a></li><!--- IMAGE URL INI HARUS DIGANTI SHOHIB-->
+        <li class="kat2 szallasKatBtn katBtn1"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar1.html','szallasLeiras');"><b>Shohib</b></a></li><!--- IMAGE URL INI HARUS DIGANTI SHOHIB-->
+                    <!--<li class="kat3 szallasKatBtn katBtn1"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar2.html','szallasLeiras');" ><b>Luxi szÃ¡llÃ¡s</b><span><span></span></span></a></li>
+                    <li class="kat4 szallasKatBtn katBtn1"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar3.html','szallasLeiras');" ><b>Jobb mint otthon</b><span><span></span></span></a></li>-->
+
+                </ul>
+               <div class="arrowanimation"></div>
+            </div>
+           <!-- <div id="szallasLista">
+                <div class="szallasMenu">
+                    <ul>
+                        <li id="szallasKatBack"><a href="#"><b>vissza a szÃ¡llÃ¡s kategÃ³riÃ¡khoz</b></a></li>
+                        <li class="kat1 szallasKatBtn katBtn2"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar.html','lista');" ><b>olcsÃ³ buli szÃ¡llÃ¡sok</b><span><span></span></span></a></li>
+                        <li class="kat2 szallasKatBtn katBtn2"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-lista2.html','lista');" ><b>valami jobbat akarok</b><span><span></span></span></a></li>
+
+                        <li class="kat3 szallasKatBtn katBtn2"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-lista3.html','lista');" ><b>luxi szÃ¡llÃ¡s</b><span><span></span></span></a></li>
+                        <li class="kat4 szallasKatBtn katBtn2"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-lista4.html','lista');" ><b>jobb mint otthon</b><span><span></span></span></a></li>
+                    </ul>
+                </div>
+                <div id="lista"></div>
+            </div>-->
+            <div id="szallas">
+              <div class="szallasMenu">
+
+                  <ul>
+                      <li id="szallasListBack"><a href="#"><b>shohib</b></a></li>
+                     <!-- <li class="kat1 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar.html','szallasLeiras');" ><b>olcsÃ³ buli szÃ¡llÃ¡sok</b><span><span></span></span></a></li>-->
+                      <!--<li class="kat2 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar1.html','szallasLeiras');" ><b>valami jobbat akarok</b><span><span></span></span></a></li>
+                      <li class="kat3 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar2.html','szallasLeiras');" ><b>luxi szÃ¡llÃ¡s</b><span><span></span></span></a></li>
+                      <li class="kat4 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar3.html','szallasLeiras');" ><b>jobb mint otthon</b><span><span></span></span></a></li>-->
+
+                  </ul>
+              </div>
+
+              <a href="#" class="szallasScrollUp"><b>UP</b></a>
+              <a href="#" class="szallasScrollDn"><b>DOWN</b></a>
+            </div>
+
+        </div></div>
+          <div id="forum" class="page" style="left: 0px;">
+<div>
+    <!--<div id="forumLogin">
+        <div id="loginInputs">
+             <input type="text" id="username" name="" />
+             <input type="password" id="password" name="" />
+             <a class="loginToForum" href="#"><b>Mehet</b></a>
+        </div>
+        <p>A fÃ³rum hasznÃ¡lata regisztrÃ¡ciÃ³hoz kÃ¶tÃ¶tt. <a href="#" class="pl" rel="1"><strong>Itt tudsz regisztrÃ¡lni</strong></a></p>
+
+    </div>-->
+    <div id="forumFrameCont">
+        <ul id="forumFrame">
+        <li class="gettingtext">Denah</li>
+        <li style="width:300px; float:left; height:265px; z-index:99; background-position:15px 25px; background-image:url(image/direction.gif); background-repeat:no-repeat;"></li>
+        <li style="width:310px; float:left; height:230px; z-index:999; background-position:25px 10px; background-image:url(image/map.gif); background-repeat:no-repeat;"></li>
+        <li style="width:70px; float:left; height:230px; z-index:1999; background-position:0px 18px; background-image:url(image/contac-me.jpg); background-repeat:no-repeat;"></li>
+        </ul>
+  </div>
+  <div id="forumFrameCont" style="">
+  <ul id="forumFrame">
+        <li style="width: 380px; height: 380px; float: right; z-index: 9999; background-image: url(&quot;image/venue.png&quot;); background-position: 0px 232px; background-repeat: no-repeat;"></li>
+        </ul>
+  </div>
+    <a href="#" class="forumCommentBtn"><b>click here</b></a>
+    <!--<a href="#" class="forumScrollUp"><b>FEl</b></a>
+    <a href="#" class="forumScrollDn"><b>LE</b></a>-->
+
+    <div id="forumComment" style="display: none;">
+        <div id="commentInputs">
+        <div style="padding-top: 64px; padding-left: 54px;"><iframe width="675" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps/ms?msa=0&amp;msid=200257204367880053105.0004b77c21cd88e791a46&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.641674,77.204586&amp;spn=0.002354,0.003208&amp;z=17&amp;iwloc=0004b77c21d0629eae48f&amp;output=embed" style="display: inline-block;"></iframe></div>
+         <!-- <textarea class="commentField" id="comment" name=""></textarea>-->
+             <a class="sendComment" href="http://maps.google.co.in/maps/ms?msa=0&amp;msid=200257204367880053105.0004b77c21cd88e791a46&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.641674,77.204586&amp;spn=0.002354,0.003208&amp;z=17&amp;iwloc=0004b77c21d0629eae48f&amp;source=embed" target="_blank"><b>Mehet</b></a>
+             <a class="backToComments" href="#"><b>Vissza</b></a>
+        </div>
+    </div>
+
+</div></div>
+      <div id="tudnivalok" class="page">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div id="menu">
+    <div id="menuContent"> 
+    <a href="#" class="sm1 pl" rel="5"><b>Main Logo</b></a>
+    <a href="#" class="sm4 pl" rel="3"><b>Love Story</b></a>
+    <a href="#" class="sm5 pl" rel="4"><b>Resepsi</b></a>
+    <a href="#" class="sm6 pl" rel="6"><b>Bio Scope</b></a>
+    <a href="#" class="sm7 pl" rel="7"><b>Denah</b></a>
+    </div>
+  </div>
+  <div id="woods"></div>
+  <div id="mountain"></div>
+  <div id="sky"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<script type="text/javascript" src="js-form/all-text2.js"></script>
+</body>
+</html>

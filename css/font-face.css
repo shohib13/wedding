@@ -1,0 +1,11 @@
+﻿@font-face {
+	font-family: 'indiepimptbs';
+	src: url('fonts/indiepimptbs.eot');
+	src: local('indiepimptbs'), url('fonts/indiepimptbs.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'indiepimptbs';
+	src: url('fonts/indiepimptbs-1.eot');
+	src: local('indiepimptbs'), url('fonts/indiepimptbs-1.ttf') format('truetype');
+}
