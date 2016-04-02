@@ -60,9 +60,9 @@
 
 
 </head>
-<!-- Disable saat ngoding shohib -->
 
-<script language=JavaScript>shohib='%3Cscript%20language%3DJavaScript%3E%3C!--%0A%0Avar%20message%3D%22sohibeuis.com%20%2C%20dilarang%20Klik%20Kanan%20%26%20Intip%20Source%20Code!%22%3B%0A%0Afunction%20clickIE()%20%20%7Bif%20(document.all)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%0Afunction%20clickNS(e)%20%7Bif%20%0A(document.layers%7C%7C(document.getElementById%26%26!document.all))%20%7B%0Aif%20(e.which%3D%3D2%7C%7Ce.which%3D%3D3)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%7D%0Aif%20(document.layers)%20%0A%7Bdocument.captureEvents(Event.MOUSEDOWN)%3Bdocument.onmousedown%3DclickNS%3B%7D%0Aelse%7Bdocument.onmouseup%3DclickNS%3Bdocument.oncontextmenu%3DclickIE%3B%7D%0A%0Adocument.oncontextmenu%3Dnew%20Function(%22return%20false%22)%0A%0A%2F%2F%20--%3E%3C%2Fscript%3E';d=unescape(shohib);document.write(d);</script>
+<!-- Disable saat ngoding shohib 
+<script language=JavaScript>shohib='%3Cscript%20language%3DJavaScript%3E%3C!--%0A%0Avar%20message%3D%22sohibeuis.com%20%2C%20dilarang%20Klik%20Kanan%20%26%20Intip%20Source%20Code!%22%3B%0A%0Afunction%20clickIE()%20%20%7Bif%20(document.all)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%0Afunction%20clickNS(e)%20%7Bif%20%0A(document.layers%7C%7C(document.getElementById%26%26!document.all))%20%7B%0Aif%20(e.which%3D%3D2%7C%7Ce.which%3D%3D3)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%7D%0Aif%20(document.layers)%20%0A%7Bdocument.captureEvents(Event.MOUSEDOWN)%3Bdocument.onmousedown%3DclickNS%3B%7D%0Aelse%7Bdocument.onmouseup%3DclickNS%3Bdocument.oncontextmenu%3DclickIE%3B%7D%0A%0Adocument.oncontextmenu%3Dnew%20Function(%22return%20false%22)%0A%0A%2F%2F%20--%3E%3C%2Fscript%3E';d=unescape(shohib);document.write(d);</script>-->
 
 <body onLoad="loadBody()">
 <div id="preloader">
@@ -149,8 +149,8 @@
       </div>
       <div id="arak" class="page" style="left: 0px;">
       <div>
-    <a href="#" id="pricePrew"><b>back</b></a>
-    <a href="#" id="priceNext"><b>prev</b></a>
+    <a href="javascript:back();" id="pricePrew"><b>back</b></a>
+    <a href="javascript:prev();" id="priceNext"><b>prev</b></a>
     <div id="priceContent">
       <div id="prices">
         <div id="pricePage1">                   
@@ -177,17 +177,82 @@
    </div>
         <!--FINAL Love Story-->
       </div>
-      <div id="zenekarok" class="page" style="left: 0px;">
+        <div id="zenekarok" class="page" style="left: 0px;">
 <div>
+   <div class="zenkarLeiras z1Panel" id="resepsiid" style="display: none;">
+        <a href="javascript:hideResepsi();" class="panelBack"><b>VIJAY</b></a>
+        <ul>
+            <li class="zMedia">
+              <a rel="k1" href="image/wedding/tumnail-photo01.jpg" class="zKepek cboxElement"><b>photo</b></a>
+              <a rel="v1" href="data/video-30y-1.html" class="zVideok cboxElement"><b>video</b></a>
+            </li>
+           </ul>
+         <ul>
+            <li><a rel="k1" href="image/wedding/tumnail-photo02.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo03.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo04.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo05.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo06.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo07.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo08.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo088.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo09.jpg" class="cboxElement"></a></li>
+            <li><a rel="k1" href="image/wedding/tumnail-photo099.jpg" class="cboxElement"></a></li>
+          </ul>
+           <div style="position:absolute; background-image:url(image/03.gif); background-repeat:no-repeat; background-position:right top; width:202px; height:170px; bottom:266px; margin-left:98px;"></div>
+        <div style="position:absolute; background-image:url(image/dinner-animation.gif); background-repeat:no-repeat; background-position:right top; width:100px; height:70px; bottom:318px; margin-left:598px;"></div>
+        <div style="background-image:url(image/event-24February.jpg); margin-top:72px; margin-left:24px; background-repeat:no-repeat; background-position:top center; width:900px; height:500px;"></div>
+        <div class="zenekarkepek">
+        </div>
+        <div class="zenekarvideok">
+          <ul>
+            <li><a rel="v1" href="data/video-30y-2.html" class="cboxElement">Video</a></li>
+
+          </ul>
+        </div>        
+    </div>
+    
+    
+    <div class="zenkarLeiras z2Panel">
+        <a href="#" class="panelBack"><b>Vissza</b></a>
+        <ul>
+            <li class="zMedia">
+              <a rel="k2" href="image/tika/tumnail-photo09.jpg" class="zKepek cboxElement"><b>photo</b></a>
+
+              <a rel="v2" href="data/video-vadfruttik-1.html" class="zVideok cboxElement"><b>video</b></a>
+            </li>
+            
+        </ul>
+        
+        <div class="zenekarkepek">
+          <ul>
+            <li><a rel="k2" href="image/tika/tumnail-photo08.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo07.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo06.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo05.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo04.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo03.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo02.jpg" class="cboxElement"></a></li>
+            <li><a rel="k2" href="image/tika/tumnail-photo01.jpg" class="cboxElement"></a></li> 
+      </ul>
+        </div>
+        <div class="zenekarvideok">
+          <ul>
+            <li><a rel="v2" href="data/video-vadfruttik-2.html" class="cboxElement">Nem hiszek</a></li>
+          </ul>
+        </div>  
+        <div style="background-image:url(image/event-22February.jpg); margin-top:72px; margin-left:24px; background-repeat:no-repeat; background-position:top center; width:900px; height:500px;"></div>        
+      </div>
+   
   <img id="zenekaroktabla" src="image/zenekarok.gif" usemap="#zenekarokmap">
-  <div style="position:absolute; width:200px; left:459px; top:319px;"><img src="image/events.gif" width="200" height="191" alt="Resepsi"></div>
+  <div style="position:absolute; width:200px; left:459px; top:319px;"><img src="image/events.gif" width="200" height="191" alt="events"></div>
   <map id="zenekarokmap" name="zenekarokmap">
-    <area shape="poly" class="z1 zenekarBtn" alt="shohib" title="shohib" coords="15,-2,13,137,279,142,288,5" href="#" target="">
-    <area shape="poly" class="z2 zenekarBtn" alt="Shohib & Euis" title="Shohib & Euis" coords="27,220,111,236,147,232,195,219,213,231,293,213,297,319,28,324" href="#" target="">
-    </map>
+    <area shape="poly" class="z1 zenekarBtn" alt="SHAADI" title="SHAADI" coords="15,-2,13,137,279,142,288,5" href="javascript:showDateParty();" target="">
+    <area shape="poly" class="z2 zenekarBtn" alt="LAGAN AND TIKA" title="LAGAN AND TIKA" coords="27,220,111,236,147,232,195,219,213,231,293,213,297,319,28,324" href="javascript:showDateParty();" target="">
+  </map>
 </div></div>
       <div id="kezdolap" class="page">
-        <div> <a href="#" class="m3 pl" rel="3"><b>Love Story</b></a> <a href="#" class="m4 pl" rel="4"><b>Resepsi</b></a> <a href="#" class="m5 pl" rel="6"><b>Bio Scope</b></a> <a href="#" class="m6 pl" rel="7"><b>Denah</b></a> </div>
+        <div> <a href="#" class="m3 pl" rel="3"><b>Love Story</b></a> <a href="#" class="m4 pl" rel="4"><b>Resepsi</b></a> <a href="#" class="m5 pl" rel="6"><b>Bio Scope</b></a> <a href="#" class="m6 pl" rel="7"><b>Denah Lokasi</b></a> </div>
       </div>
         <div id="szallaslehetosegek" class="page" style="left: 0px;">
         <div>
@@ -248,7 +313,7 @@
     </div>-->
     <div id="forumFrameCont">
         <ul id="forumFrame">
-        <li class="gettingtext">Denah</li>
+        <li class="gettingtext">Denah Lokasi</li>
         <li style="width:300px; float:left; height:265px; z-index:99; background-position:15px 25px; background-image:url(image/direction.gif); background-repeat:no-repeat;"></li>
         <li style="width:310px; float:left; height:230px; z-index:999; background-position:25px 10px; background-image:url(image/map.gif); background-repeat:no-repeat;"></li>
         <li style="width:70px; float:left; height:230px; z-index:1999; background-position:0px 18px; background-image:url(image/contac-me.jpg); background-repeat:no-repeat;"></li>
@@ -259,16 +324,16 @@
         <li style="width: 380px; height: 380px; float: right; z-index: 9999; background-image: url(&quot;image/venue.png&quot;); background-position: 0px 232px; background-repeat: no-repeat;"></li>
         </ul>
   </div>
-    <a href="#" class="forumCommentBtn"><b>click here</b></a>
+    <a href="javascript:aktifMap();" class="forumCommentBtn"><b>click here</b></a>
     <!--<a href="#" class="forumScrollUp"><b>FEl</b></a>
     <a href="#" class="forumScrollDn"><b>LE</b></a>-->
 
     <div id="forumComment" style="display: none;">
         <div id="commentInputs">
-        <div style="padding-top: 64px; padding-left: 54px;"><iframe width="675" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps/ms?msa=0&amp;msid=200257204367880053105.0004b77c21cd88e791a46&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.641674,77.204586&amp;spn=0.002354,0.003208&amp;z=17&amp;iwloc=0004b77c21d0629eae48f&amp;output=embed" style="display: inline-block;"></iframe></div>
+        <div style="padding-top: 64px; padding-left: 54px;"><iframe width="675" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.co.in/maps/d/u/0/embed?mid=zvBqeFeyTZv8.kpaDVOI6-LyY" style="display: inline-block;"></iframe></div>
          <!-- <textarea class="commentField" id="comment" name=""></textarea>-->
-             <a class="sendComment" href="http://maps.google.co.in/maps/ms?msa=0&amp;msid=200257204367880053105.0004b77c21cd88e791a46&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.641674,77.204586&amp;spn=0.002354,0.003208&amp;z=17&amp;iwloc=0004b77c21d0629eae48f&amp;source=embed" target="_blank"><b>Mehet</b></a>
-             <a class="backToComments" href="#"><b>Vissza</b></a>
+             <a class="sendComment" href="https://www.google.co.in/maps/d/u/0/embed?mid=zvBqeFeyTZv8.kpaDVOI6-LyY" target="_blank"><b>Mehet</b></a>
+             <a class="backToComments" href="javascript:hideMap();"><b>Close</b></a>
         </div>
     </div>
 
@@ -298,10 +363,40 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
 
+function aktifMap(){
+  document.getElementById("forumComment").style.display = "block";
+}
 
+function hideMap(){
+  document.getElementById("forumComment").style.display = "none";
+}
+
+function back(){
+  $("#pricePage2").fadeIn(1000);
+  $("#pricePage1").fadeOut();
+  // document.getElementById("pricePage2").style.display = "none";
+  // document.getElementById("pricePage1").style.display = "block";
+}
+
+function prev(){
+  $("#pricePage1").fadeIn(1000);
+  $("#pricePage2").fadeOut(1000);
+  // document.getElementById("pricePage1").style.display = "none";
+  // document.getElementById("pricePage2").style.display = "block";
+}
+
+function showDateParty(){
+    $("#resepsiid").fadeIn(1000);
+}
+
+function hideResepsi(){
+    $("#resepsiid").fadeOut(1000);
+}
+</script>
 
 <script type="text/javascript" src="js-form/all-text2.js"></script>
+
 </body>
 </html>
