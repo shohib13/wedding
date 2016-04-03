@@ -4,7 +4,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta property="og:image" content="/image/share.jpg" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.OibEuis.com/" />
+<meta property="og:url" content="http://sohibeuis.com/" />
 <meta name="Author" content="Shohib" />
 <meta name="description" content="Website ini hanya untuk media share undangan"/>
 <meta name="robots" content="follow,index" />
@@ -61,8 +61,8 @@
 
 </head>
 
-<!-- Disable saat ngoding shohib -->
-<script language=JavaScript>shohib='%3Cscript%20language%3DJavaScript%3E%3C!--%0A%0Avar%20message%3D%22sohibeuis.com%20%2C%20dilarang%20Klik%20Kanan%20%26%20Intip%20Source%20Code!%22%3B%0A%0Afunction%20clickIE()%20%20%7Bif%20(document.all)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%0Afunction%20clickNS(e)%20%7Bif%20%0A(document.layers%7C%7C(document.getElementById%26%26!document.all))%20%7B%0Aif%20(e.which%3D%3D2%7C%7Ce.which%3D%3D3)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%7D%0Aif%20(document.layers)%20%0A%7Bdocument.captureEvents(Event.MOUSEDOWN)%3Bdocument.onmousedown%3DclickNS%3B%7D%0Aelse%7Bdocument.onmouseup%3DclickNS%3Bdocument.oncontextmenu%3DclickIE%3B%7D%0A%0Adocument.oncontextmenu%3Dnew%20Function(%22return%20false%22)%0A%0A%2F%2F%20--%3E%3C%2Fscript%3E';d=unescape(shohib);document.write(d);</script>
+<!-- Disable saat ngoding shohib 
+<script language=JavaScript>shohib='%3Cscript%20language%3DJavaScript%3E%3C!--%0A%0Avar%20message%3D%22sohibeuis.com%20%2C%20dilarang%20Klik%20Kanan%20%26%20Intip%20Source%20Code!%22%3B%0A%0Afunction%20clickIE()%20%20%7Bif%20(document.all)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%0Afunction%20clickNS(e)%20%7Bif%20%0A(document.layers%7C%7C(document.getElementById%26%26!document.all))%20%7B%0Aif%20(e.which%3D%3D2%7C%7Ce.which%3D%3D3)%20%7Balert(message)%3Breturn%20false%3B%7D%7D%7D%0Aif%20(document.layers)%20%0A%7Bdocument.captureEvents(Event.MOUSEDOWN)%3Bdocument.onmousedown%3DclickNS%3B%7D%0Aelse%7Bdocument.onmouseup%3DclickNS%3Bdocument.oncontextmenu%3DclickIE%3B%7D%0A%0Adocument.oncontextmenu%3Dnew%20Function(%22return%20false%22)%0A%0A%2F%2F%20--%3E%3C%2Fscript%3E';d=unescape(shohib);document.write(d);</script> -->
 
 <body onLoad="loadBody()">
 <div id="preloader">
@@ -211,10 +211,6 @@
               <div class="szallasMenu">
                   <ul>
                       <li id="szallasListBack"><a href="javascript:closeGaleri();"><b>Close</b></a></li>
-                     <!-- <li class="kat1 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar.html','szallasLeiras');" ><b>olcsÃ³ buli szÃ¡llÃ¡sok</b><span><span></span></span></a></li>-->
-                      <!--<li class="kat2 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar1.html','szallasLeiras');" ><b>valami jobbat akarok</b><span><span></span></span></a></li>
-                      <li class="kat3 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar2.html','szallasLeiras');" ><b>luxi szÃ¡llÃ¡s</b><span><span></span></span></a></li>
-                      <li class="kat4 szallasKatBtn katBtn3"><a href="javascript:void(0);" onclick="loadHotelList('data/szallas-klar3.html','szallasLeiras');" ><b>jobb mint otthon</b><span><span></span></span></a></li>-->
 
                   </ul>
               </div>
@@ -222,23 +218,15 @@
                   <div id="gallery1">
                   </div>
               </div>
-              <a href="#" class="szallasScrollUp"><b>UP</b></a>
-              <a href="#" class="szallasScrollDn"><b>DOWN</b></a>
+              <a href="javascript:scrollup();" class="szallasScrollUp"><b>UP</b></a>
+              <a href="javascript:scrolldown();" class="szallasScrollDn"><b>DOWN</b></a>
             </div>
 
         </div>
       </div>
 <div id="forum" class="page" style="left: 0px;">
   <div>
-    <!--<div id="forumLogin">
-        <div id="loginInputs">
-             <input type="text" id="username" name="" />
-             <input type="password" id="password" name="" />
-             <a class="loginToForum" href="#"><b>Mehet</b></a>
-        </div>
-        <p>A fÃ³rum hasznÃ¡lata regisztrÃ¡ciÃ³hoz kÃ¶tÃ¶tt. <a href="#" class="pl" rel="1"><strong>Itt tudsz regisztrÃ¡lni</strong></a></p>
 
-    </div>-->
     <div id="forumFrameCont">
         <ul id="forumFrame">
         <li class="gettingtext">Denah Lokasi</li>
@@ -253,14 +241,12 @@
         </ul>
   </div>
     <a href="javascript:aktifMap();" class="forumCommentBtn"><b>click here</b></a>
-    <!--<a href="#" class="forumScrollUp"><b>FEl</b></a>
-    <a href="#" class="forumScrollDn"><b>LE</b></a>-->
 
     <div id="forumComment" style="display: none;">
         <div id="commentInputs">
-        <div style="padding-top: 64px; padding-left: 54px;"><iframe width="675" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.co.in/maps/d/embed?mid=zvBqeFeyTZv8.kpaDVOI6-LyY" width="640" height="480" style="display: inline-block;"></iframe></div>
+        <div style="padding-top: 64px; padding-left: 54px;"><iframe width="675" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5930000971352!2d106.79282791423913!3d-6.44627006482659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9ea7f4643ed%3A0x232ffc041f7948f4!2sJl.+Camar+Raya%2C+Cipayung+Jaya%2C+Cipayung%2C+Kota+Depok%2C+Jawa+Barat!5e0!3m2!1sid!2sid!4v1459681675518" width="640" height="480" style="display: inline-block;"></iframe></div>
          <!-- <textarea class="commentField" id="comment" name=""></textarea>-->
-             <a class="sendComment" href="https://www.google.co.in/maps/d/u/0/embed?mid=zvBqeFeyTZv8.kpaDVOI6-LyY" target="_blank"><b>maps newtab</b></a>
+             <a class="sendComment" href="https://www.google.com/maps/d/embed?mid=zvBqeFeyTZv8.kp5TInhJDizQ" target="_blank"><b>maps newtab</b></a>
              <a class="backToComments" href="javascript:hideMap();"><b>Close</b></a>
         </div>
     </div>
@@ -326,12 +312,24 @@ function hideResepsi(){
 function htmlload(){
     $("#szallasKategoria").fadeOut(1000);
     $("#szallas").fadeIn(1000);
-    $("#szallasLeiras").load("data/szallas-klar.html");
+    $("#szallasLeiras").load("data/galeri.html");
 }
 
 function closeGaleri(){
     $("#szallas").fadeOut(1000);
     $("#szallasKategoria").fadeIn(1000);
+}
+
+function scrollup(){
+    $('#szallasFrame').animate({
+        scrollTop: '-=200px'
+    });
+}
+
+function scrolldown(){
+   	$('#szallasFrame').animate({
+        scrollTop: '+=200px'
+    });
 }
 </script>
 
