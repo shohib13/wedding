@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $("a.[rel='szallaskep']").colorbox();
+  $("a.[rel='galer']").colorbox();
 });
