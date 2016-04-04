@@ -47,7 +47,7 @@
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
   when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to IE9.
 */
-.cboxIE #cboxTopLeft,
+/*.cboxIE #cboxTopLeft,
 .cboxIE #cboxTopCenter,
 .cboxIE #cboxTopRight,
 .cboxIE #cboxBottomLeft,
@@ -56,12 +56,12 @@
 .cboxIE #cboxMiddleLeft,
 .cboxIE #cboxMiddleRight {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
-}
+}*/
 
 /*
   The following provides PNG transparency support for IE6
 */
-.cboxIE6 #cboxTopLeft{background:url(../images/ie6/borderTopLeft.png);}
+/*.cboxIE6 #cboxTopLeft{background:url(../images/ie6/borderTopLeft.png);}
 .cboxIE6 #cboxTopCenter{background:url(../images/ie6/borderTopCenter.png);}
 .cboxIE6 #cboxTopRight{background:url(../images/ie6/borderTopRight.png);}
 .cboxIE6 #cboxBottomLeft{background:url(../images/ie6/borderBottomLeft.png);}
@@ -79,4 +79,4 @@
 .cboxIE6 #cboxMiddleLeft,
 .cboxIE6 #cboxMiddleRight {
     _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
-}
+}*/

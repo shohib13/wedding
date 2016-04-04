@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  /*ZENEKAROK*/
+  /*resepsi*/
   $('.z1').click(function(){$('.z1Panel').show("scale", {}, 500);});
   $('.z2').click(function(){$('.z2Panel').show("scale", {}, 500);});
   $('.z3').click(function(){$('.z3Panel').show("scale", {}, 500);});

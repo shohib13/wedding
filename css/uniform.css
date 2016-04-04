@@ -44,7 +44,7 @@ div.button span {
 
 /* INPUT & TEXTAREA */
 
-input.text,
+/*input.text,
 input.email, 
 input.password,
 textarea.uniform {
@@ -63,9 +63,9 @@ textarea.uniform {
   -moz-border-radius: 3px;
   border-radius: 3px;
   outline: 0;
-}
+}*/
 
-input.text:focus,
+/*input.text:focus,
 input.email:focus,
 input.password:focus,
 textarea.uniform:focus {
@@ -74,7 +74,7 @@ textarea.uniform:focus {
   box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
   border-color: #999;
   background: url('../images/bg-input-focus.png') repeat-x 0px 0px;
-}
+}*/
 
 /* SPRITES */
 
@@ -150,7 +150,7 @@ div.checker input {
   height: 23px;
 }
 
-div.checker span {
+/*div.checker span {
   height: 23px;
   width: 23px;
   background-image: url(../image/checkbox.png);
@@ -161,7 +161,7 @@ div.checker span {
 div.checker:active span, 
 div.checker.active span {
   background-position: 0px -69px;
-}
+}*/
 
 div.checker.focus span,
 div.checker:hover span {
@@ -210,7 +210,7 @@ div.checker.disabled.active span.checked {
 
 /* Radio */
 
-div.radio {
+/*div.radio {
   width: 23px;
   height: 23px;
 }
@@ -276,7 +276,7 @@ div.radio.disabled:active span.checked,
 div.radio.disabled.active span.checked {
   background-position: 0px 0px;
 
-}
+}*/
 
 /* Uploader */
 

@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'indiepimptbs';
-	src: url('http://www.theperfectjodi.com/css/fonts/indiepimptbs.eot');
-	src: local('indiepimptbs'), url('http://www.theperfectjodi.com/css/fonts/indiepimptbs.ttf') format('truetype');
+	src: url('../css/fonts/indiepimptbs.eot');
+	src: local('indiepimptbs'), url('../css/fonts/indiepimptbs.ttf') format('truetype');
 }
 
 @font-face {

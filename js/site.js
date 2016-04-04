@@ -9,14 +9,14 @@ function loadHotelList(what,where){
     );
 }
 function loadHotel(what2,where2){
-        $('#szallas').show("scale", {}, 500);
-        $('#szallasLista').hide("scale", {}, 500);
+        $('#gallery').show("scale", {}, 500);
+        $('#galleryLista').hide("scale", {}, 500);
         $.get(
             what2,
             {},
             function(data){
                 $('#'+where2).html(data);
-                $("#szallasLeiras").animate({top:(0)},300);
+                $("#galleryLeiras").animate({top:(0)},300);
             },
             'text'
         );
