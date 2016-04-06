@@ -402,5 +402,5 @@ a.faktaScrollDn:hover { background-position: -43px -40px; }
 }
 .resepsikepek, .resepsivideok { display: none; }
 
-/*#siberletek { display: none; }*/
+#siberletek { display: none; }
 #fakta a { color: #EF3F37; }
